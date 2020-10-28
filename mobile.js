@@ -60,6 +60,9 @@ var Mobile = /** @class */ (function () {
     Mobile.prototype.setPrice = function (price) {
         this.price = price;
     };
+    Mobile.prototype.toString = function () {
+        return "Name: " + this.name + "\n" + "Model: " + this.model + "\n" + "Trademark: " + this.trademark + "\n" + "SD Size(GB): " + this.sdSize + "Color: " + this.color + "\n" + "Is 5G?: " + this.is5G + "\n" + "Number of Camaras: " + this.cameraNumber + "\n" + "Price: " + this.price + "€";
+    };
     return Mobile;
 }());
 exports.Mobile = Mobile;
