@@ -1,12 +1,12 @@
 export class Mobile {
-    public name:string;
-    public model:string;
-    public trademark:string;
-    public sdSize:number;
-    public color:string;
-    public is5G:boolean;
-    public cameraNumber:number;
-    public price:number;
+    private name:string;
+    private model:string;
+    private trademark:string;
+    private sdSize:number;
+    private color:string;
+    private is5G:boolean;
+    private cameraNumber:number;
+    private price:number;
 
     constructor (name:string, model:string, trademark:string, sdSize:number, color:string, is5G:boolean, cameraNumber:number, price:number) {
         this.name = name;
