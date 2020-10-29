@@ -6,7 +6,7 @@ var MobileLibrary = /** @class */ (function () {
         this.name = name;
         this.location = location;
         this.mobiles = mobiles;
-        this.totalPrice = this.totalPrice;
+        this.totalPrice = this.totalPriceCalculation();
     }
     MobileLibrary.prototype.getName = function () {
         return this.name;
@@ -32,12 +32,24 @@ var MobileLibrary = /** @class */ (function () {
     MobileLibrary.prototype.setTotalPrice = function (totalPrice) {
         this.totalPrice = totalPrice;
     };
+    MobileLibrary.prototype.gettotalPriceCalculation = function () {
+        return this.totalPriceCalculation();
+    };
     MobileLibrary.prototype.totalPriceCalculation = function () {
         var sumaPrecios = 0;
         for (var i = 0; i < this.mobiles.length; i++) {
             sumaPrecios += this.mobiles[i].getPrice();
         }
         return sumaPrecios;
+    };
+    MobileLibrary.prototype.printLibrary = function () {
+        var imprimir = "";
+        imprimir += "This is all my mobiles: " + "\n";
+        for (var i = 0; i < this.mobiles.length; i++) {
+            imprimir += this.mobiles[i].toString();
+        }
+        imprimir += "Price Overall: " + this.totalPriceCalculation();
+        return imprimir;
     };
     return MobileLibrary;
 }());

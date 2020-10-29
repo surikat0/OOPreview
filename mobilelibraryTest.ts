@@ -11,8 +11,8 @@ let samsungGalaxyNote:Mobile = new Mobile("The Note", "GalaxyNote", "Samsung", 2
 let terminales = [nokia3310, iphone8G, samsungGalaxyNote];
 let library:MobileLibrary = new MobileLibrary("Whatever", "Madrid", terminales);
 
-console.log(library.totalPriceCalculation());
-console.log("-------------");
+// console.log(library.totalPriceCalculation());
+// console.log("-------------");
 
 // Probar que funcionan los métodos del objeto.
 
@@ -30,4 +30,14 @@ console.log(library.getName());
 console.log("-------------");
 library.setMobiles(terminales);
 console.log(library.getMobiles());
+console.log("-------------");
 
+// probar printLibrary.
+
+console.log(library.printLibrary());
+console.log("-------------");
+console.log(library.gettotalPriceCalculation());
+console.log("-------------");
+console.log(library.getMobiles());
+console.log("-------------");
+console.log(library.getName());

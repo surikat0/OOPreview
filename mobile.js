@@ -61,7 +61,7 @@ var Mobile = /** @class */ (function () {
         this.price = price;
     };
     Mobile.prototype.toString = function () {
-        return "Name: " + this.name + "\n" + "Model: " + this.model + "\n" + "Trademark: " + this.trademark + "\n" + "SD Size(GB): " + this.sdSize + "Color: " + this.color + "\n" + "Is 5G?: " + this.is5G + "\n" + "Number of Camaras: " + this.cameraNumber + "\n" + "Price: " + this.price + "€";
+        return "The characteristics of the mobile " + this.name + " are:" + "\n" + "Name: " + this.name + "\n" + "Model: " + this.model + "\n" + "Trademark: " + this.trademark + "\n" + "SD Size(GB): " + this.sdSize + "Color: " + this.color + "\n" + "Is 5G?: " + this.is5G + "\n" + "Number of Camaras: " + this.cameraNumber + "\n" + "Price: " + this.price + "€" + "\n";
     };
     return Mobile;
 }());

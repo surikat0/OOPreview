@@ -10,8 +10,8 @@ var iphone8G = new mobile_1.Mobile("The First", "iPhone8G", "Apple", 256, "White
 var samsungGalaxyNote = new mobile_1.Mobile("The Note", "GalaxyNote", "Samsung", 256, "Blue", true, 3, 700);
 var terminales = [nokia3310, iphone8G, samsungGalaxyNote];
 var library = new mobilelibrary_1.MobileLibrary("Whatever", "Madrid", terminales);
-console.log(library.totalPriceCalculation());
-console.log("-------------");
+// console.log(library.totalPriceCalculation());
+// console.log("-------------");
 // Probar que funcionan los métodos del objeto.
 console.log(library.getLocation());
 console.log("-------------");
@@ -27,3 +27,12 @@ console.log(library.getName());
 console.log("-------------");
 library.setMobiles(terminales);
 console.log(library.getMobiles());
+console.log("-------------");
+// probar printLibrary.
+console.log(library.printLibrary());
+console.log("-------------");
+console.log(library.gettotalPriceCalculation());
+console.log("-------------");
+console.log(library.getMobiles());
+console.log("-------------");
+console.log(library.getName());
