@@ -19,3 +19,4 @@ let myObjects = [nokia3210, iPhone3G, samsungGalaxy10];
 for (let i = 0; i < myObjects.length; i++) {
     console.log("\n" + myObjects[i].toString()); 
 }
+
